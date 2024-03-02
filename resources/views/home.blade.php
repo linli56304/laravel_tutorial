@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row px-5">
         <div class="col-3 p-5">
-            <img src="https://images.cars.com/cldstatic/wp-content/uploads/2020-Mercedes-Benz-AMG-CLA45-OEM-2.jpg" style="height: 250px; width: 250px;" class="rounded-circle">
+            <img src="https://g20.bimmerpost.com/forums/attachment.php?attachmentid=2737193&stc=1&d=1636249291" style="height: 250px; width: 250px;" class="rounded-circle">
         </div>
         <div class="col-9 p-5">
             <div>
@@ -15,23 +15,22 @@
                 <div class="pe-5"><strong>6.1k</strong> followers</div>
                 <div><strong>6</strong> following</div>
             </div>
-            <div class="pt-4 fw-bold">www.mbusa.com</div>
-            <div>It's a fresh take on a passionate original: New technologies inside and under the hood. Electrifying style to go with its electrically and turbo-boosted engine. It's more thoughtful. More thoroughly equipped. And more tempting than ever.
-            </div>
-            <div><a href="#">https://www.mbusa.com/en/vehicles/class/cla/coupe</a></div>
+            <div class="pt-4 fw-bold">{{ $user->profile->title }}</div>
+            <div>{{ $user->profile->description }}</div>
+            <div><a href="#">{{ $user->profile->url ?? 'url.com'}}</a></div>
 
         </div>
     </div>
 
     <div class="row px-5 pt-5">
         <div class="col-4">
-            <img src="https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2022/07/2020-Mercedes-AMG-CLA45-5.png" class="w-100">
+            <img src="https://i.pinimg.com/originals/b5/53/4b/b5534b099542d21eb09ce50979a90fb9.jpg" class="w-100">
         </div>
         <div class="col-4">
-            <img src="https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2022/07/2020-Mercedes-AMG-CLA45-5.png" class="w-100">
+            <img src="https://i.pinimg.com/originals/b5/53/4b/b5534b099542d21eb09ce50979a90fb9.jpg" class="w-100">
         </div>
         <div class="col-4">
-            <img src="https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2022/07/2020-Mercedes-AMG-CLA45-5.png" class="w-100">
+            <img src="https://i.pinimg.com/originals/b5/53/4b/b5534b099542d21eb09ce50979a90fb9.jpg" class="w-100">
         </div>
     </div>
 </div>
