@@ -7,8 +7,9 @@
             <img src="https://g20.bimmerpost.com/forums/attachment.php?attachmentid=2737193&stc=1&d=1636249291" style="height: 250px; width: 250px;" class="rounded-circle">
         </div>
         <div class="col-9 p-5">
-            <div>
+            <div class="d-flex justify-content-between align-items-baseline">
                 <h1>{{ $user->username }}</h1>
+                <a href="#">Add a new post</a>
             </div>
             <div class="d-flex">
                 <div class="pe-5"><strong>666</strong> posts</div>
