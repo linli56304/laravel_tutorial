@@ -26,7 +26,9 @@
     <div class="row px-5 pt-5">
         @foreach($user->posts as $post)
         <div class="col-4 pb-4">
-            <img src="/storage/{{ $post->image }}" class="w-100">
+            <a href="/p/{{ $post->id }}">
+                <img src="/storage/{{ $post->image }}" class="w-100 h-100 object-fit-contain border rounded">
+            </a>
         </div>
         @endforeach
     </div>
