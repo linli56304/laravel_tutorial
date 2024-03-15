@@ -4,7 +4,7 @@
 <div class="container">
     <div class="row px-5">
         <div class="col-3 p-5">
-            <img src="https://g20.bimmerpost.com/forums/attachment.php?attachmentid=2737193&stc=1&d=1636249291" style="height: 250px; width: 250px;" class="rounded-circle">
+            <img src="/storage/{{ $user->profile->image }}" style="height: 250px; width: 250px;" class="rounded-circle">
         </div>
         <div class="col-9 p-5">
             <div class="d-flex justify-content-between align-items-baseline">

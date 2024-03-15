@@ -25,10 +25,18 @@ class ProfileController extends Controller
             'title'=>'required',
             'description'=>'required',
             'url'=>'',
-            'image'=>'',
+            'image'=>'image',
         ]);
 
-        $user->profile->update($data);
+        if (request('image')) {
+            $imagePath = request('image')->store('profile', 'public');
+            $imageArray = ['image' => $imagePath];
+        }
+
+        auth()->user()->profile->update(array_merge(
+            $data,
+            $imageArray ?? []
+        ));
 
         return redirect("/profile/{$user->id}");
     }
